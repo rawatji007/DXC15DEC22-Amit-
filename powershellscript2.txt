@@ -1,0 +1,5 @@
+Set-Location c:\Powershell\dir1\dir11
+Copy-Item -Path *.txt -Destination c:\powershell\dir2\dir21
+Copy-Item -Path *.csv -Destination c:\powershell\dir2\dir22
+Move-Item -Path * -Destination ../dir12
+

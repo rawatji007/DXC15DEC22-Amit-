@@ -1,0 +1,25 @@
+Set-Location c:\
+New-Item -path "c:\" -Name "PowerShell" -ItemType "directory"
+Set-Location Powershell
+New-Item -path "c:\Powershell" -Name "dir1" -ItemType "directory"
+New-Item -path "c:\Powershell" -Name "dir2" -ItemType "directory"
+Set-Location dir1
+
+New-Item -path "c:\Powershell\dir1" -Name "dir11" -ItemType "directory"
+New-Item -path "c:\Powershell\dir1" -Name "dir12" -ItemType "directory"
+
+Set-Location dir11
+
+New-Item -Path 'c:\Powershell\dir1\dir11\file1.txt' -ItemType File
+
+New-Item -Path 'c:\Powershell\dir1\dir11\file2.txt' -ItemType File
+
+New-Item -Path 'c:\Powershell\dir1\dir11\file1.csv' -ItemType File
+
+New-Item -Path 'c:\Powershell\dir1\dir11\file2.csv' -ItemType File
+
+Set-Location c:\Powershell\dir2
+New-Item -path "c:\Powershell\dir2" -Name "dir21" -Itemtype "directory"
+New-Item -path "c:\Powershell\dir2" -Name "dir22" -Itemtype "directory"
+
+Set-Location c:\Powershell
